@@ -42,3 +42,32 @@ section {
   @extend .row;
   margin-top: 20px;
   }
+
+main.no-gutter{
+  padding:0;
+  .row{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  div[class*='col-']{
+    padding:0;
+  }
+}
+
+html,body
+{
+  height: 100%;
+}
+
+main.full-height{
+  display:table;
+  height: 100%;
+  .row{
+    height: 100%;
+    display: table-row;
+  }
+  div[class*='col-']{
+    display: table-cell;
+    height: 100%;
+  }
+}
